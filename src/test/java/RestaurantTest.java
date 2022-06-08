@@ -61,6 +61,13 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //>>>>>>>>>>>>>>>>>>>>>>>TDD<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+    @Test
+    public void test_total_order_cost(){
+        assertEquals(388, restaurant.getOrderCost("Vegetable lasagne", "Sweet corn soup"));
+    }
+
+    //<<<<<<<<<<<<<<<<<<<<<<<<TDD>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 }
