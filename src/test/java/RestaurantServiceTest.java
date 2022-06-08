@@ -25,7 +25,6 @@ class RestaurantServiceTest {
     public void searching_for_existing_restaurant_should_return_expected_restaurant_object() throws restaurantNotFoundException {
         Restaurant restaurant1 = service.findRestaurantByName("Amelie's cafe");
         assertNotNull(restaurant1);
-        //WRITE UNIT TEST CASE HERE
     }
 
     //You may watch the video by Muthukumaran on how to write exceptions in Course 3: Testing and Version control: Optional content
@@ -33,7 +32,6 @@ class RestaurantServiceTest {
     public void searching_for_non_existing_restaurant_should_throw_exception() throws restaurantNotFoundException {
         Restaurant restaurant1 = service.findRestaurantByName("Chatkas");
         assertNull(restaurant1);
-        //WRITE UNIT TEST CASE HERE
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
 
